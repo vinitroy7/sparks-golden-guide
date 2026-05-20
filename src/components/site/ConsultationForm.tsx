@@ -39,7 +39,7 @@ export function ConsultationForm({ compact = false }: { compact?: boolean }) {
   const input = "w-full rounded-md border border-input bg-background px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition";
 
   return (
-    <form onSubmit={submit} className="space-y-4">
+    <form onSubmit={submit} className="space-y-4" action="https://formspree.io/f/meedeyeg">
       <div className={compact ? "space-y-4" : "grid sm:grid-cols-2 gap-4"}>
         <input className={input} placeholder="Full name *" value={form.name} maxLength={80}
           onChange={(e) => setForm({ ...form, name: e.target.value })} />
